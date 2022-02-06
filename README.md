@@ -1,2 +1,2 @@
-# Work NUMBER HERE from CLASS HERE
-## Name: YOUR NAME HERE
+# Work 00 from MKS66
+## Name: Andy Lin
