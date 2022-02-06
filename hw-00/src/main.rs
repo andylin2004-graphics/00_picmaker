@@ -40,18 +40,13 @@ fn create_data() -> String{
     let mut array: [[ColorInfo; 500]; 500] = [[ColorInfo::new(); 500]; 500];
     let mut counter = 0;
     let mut r = 0;
-    let mut g = 0;
-    let mut b = 0;
     for i in 0..array.len(){
         for v in 0..array[i].len(){
             match counter%3{
                 0=>r += 1,
-                1=>g += 1,
-                _=>b += 1,
+                _=>{},
             }
             array[i][v].r = r%256;
-            array[i][v].g = g%256;
-            array[i][v].b = b%256;
         }
         counter = 0;
     }
