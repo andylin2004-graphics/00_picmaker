@@ -54,6 +54,9 @@ fn create_data() -> String{
             array[i][v].b = b;
         }
         counter = 0;
+        r = 0;
+        g = 0;
+        b = 0;
     }
  
     for i in 0..array.len(){
