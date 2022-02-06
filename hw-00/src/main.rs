@@ -52,6 +52,7 @@ fn create_data() -> String{
             array[i][v].r = r;
             array[i][v].g = g;
             array[i][v].b = b;
+            counter += 1;
         }
         counter = 0;
         r = 0;
@@ -62,7 +63,7 @@ fn create_data() -> String{
     for i in 0..array.len(){
         for v in 0..array[i].len(){
             result.push_str(&array[i][v].to_string().to_owned());
-            result.push_str(" ");
+            result.push_str("  ");
         }
         result.push_str("\n");
     }
