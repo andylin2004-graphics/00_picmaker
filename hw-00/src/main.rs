@@ -49,15 +49,11 @@ fn create_data() -> String{
                 1=>g += 1,
                 _=>b += 1,
             }
-            array[i][v].r = r;
-            array[i][v].g = g;
-            array[i][v].b = b;
-            counter += 1;
+            array[i][v].r = r%256;
+            array[i][v].g = g%256;
+            array[i][v].b = b%256;
         }
         counter = 0;
-        r = 0;
-        g = 0;
-        b = 0;
     }
  
     for i in 0..array.len(){
