@@ -1,4 +1,6 @@
-all:
-	rustc hw-00/src/main.rs
+all: main
 	./main
 	magick display imageFile.ppm
+
+main:
+	rustc hw-00/src/main.rs
